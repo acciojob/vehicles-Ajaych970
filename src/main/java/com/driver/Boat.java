@@ -4,15 +4,30 @@ public class Boat implements WaterVehicle{
 
     private String name;
     private int capacity;
+
+    public Boat() {
+    }
+
+    public Boat(String name, int capacity) {
+        this.name = name;
+        this.capacity = capacity;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setCapacity(int capacity) {
+        this.capacity = capacity;
+    }
+
     @Override
     public String getVehicleName() {
-        this.name="Udantastri";
         return this.name;
     }
 
     @Override
     public int getVehicleCapacity() {
-        this.capacity=50;
         return this.capacity;
     }
 }
